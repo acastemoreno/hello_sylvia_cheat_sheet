@@ -25,10 +25,219 @@
 [[file:images/apoyo_de.png]]
 #+END_CENTER
 
+* HTML
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+
+** Parrafos =<p>=
+Para crear un párrafo, rodea las palabras con una etiqueta de apertura =<p>= y de cierre =</p>=.
+
+Por defecto, un navegador mostrará cada párrafo en una nueva línea con un espacio entre ellos y los párrafos posteriores.
+
+#+BEGIN_SRC html
+<p> Un párrafo consiste de una o más oraciones que forman la unidad autonoma
+ del discurso. El comienzo de un párrafo se indica de una nueva línea. </p>
+<p> El texto es más fácil de entender cuando se divide en unidades de texto.
+Por ejemplo, un libro puede tener capítulos. Los capítulos pueden tener subtítulos.
+Debajo de cada encabezado habrá uno o más párrafos.</p>
+#+END_SRC
+
+** Ejemplo =<p>=
+#+BEGIN_EXPORT html
+<p> Un párrafo consiste de una o más oraciones que forman la unidad autonoma del discurso. El comienzo de un párrafo se indica de una nueva línea. </p>
+<p> El texto es más fácil de entender cuando se divide en unidades de texto. Por ejemplo, un libro puede tener capítulos. Los capítulos pueden tener subtítulos. Debajo de cada encabezado habrá uno o más párrafos.</p>
+#+END_EXPORT
+
+** Encabezados =<h1>=, =<h2>=, =<h3>=, =<h4>=, =<h5>= y =<h6>=
+HTML tiene seis “niveles” de encabezados.
+
+<h1> se usa para los títulos principales
+
+<h2> se usa para subtítulos
+
+Los navegadores muestran el contenido de los títulos en diferentes tamaños. El contenido de un elemento =<h1>= es el más grande, y el contenido de un elemento =<h6>= es el más pequeño. El tamaño exacto al que cada navegador muestra los títulos puede variar ligeramente. Los usuarios también pueden ajustar el tamaño del texto en su navegador. Verás cómo controlar el tamaño del texto, su color y las fuentes utilizadas cuando veamos CSS.
+
+** Ejemplo Encabezados
+#+BEGIN_SRC html
+<h1> Esto es un titulo principal</h1>
+<h2> Esto es un titulo nivel 2</h2>
+<h3> Esto es un titulo nivel 3</h3>
+<h4> Esto es un titulo nivel 4</h4>
+<h5> Esto es un titulo nivel 5</h5>
+<h6> Esto es un titulo nivel 6</h6>
+#+END_SRC
+
+** 
+#+BEGIN_EXPORT html
+<h1> Esto es un titulo principal</h1>
+<h2> Esto es un titulo nivel 2</h2>
+<h3> Esto es un titulo nivel 3</h3>
+<h4> Esto es un titulo nivel 4</h4>
+<h5> Esto es un titulo nivel 5</h5>
+<h6> Esto es un titulo nivel 6</h6>
+#+END_EXPORT
+
+** Strong
+El uso del elemento =<strong>= indica que su contenido tiene una gran importancia.
+
+Por defecto, los navegadores mostrarán el contenido de un elemento =<strong>= en negrita.
+#+BEGIN_SRC html
+<p><strong>Cuidado:</strong>Carteristas operan en esta área.</p>
+<p>Este juguete tiene muchas piezas pequeñas y no es <strong> adecuado para niños
+menores a cinco años. </strong><p>
+#+END_SRC
+
+** Ejemplo Strong
+#+BEGIN_EXPORT html
+<p><strong>Cuidado:</strong>Carteristas operan en esta área.</p>
+<p>Este juguete tiene muchas piezas pequeñas y no es <strong> adecuado para niños menores a cinco años. </strong><p>
+#+END_EXPORT
+
+** Énfasis
+El elemento =<em>= indica énfasis que cambia sutilmente el significado de una oración.
+
+Por defecto, los navegadores mostrarán el contenido de un elemento =<em>= en italica.
+
+#+BEGIN_SRC html
+<p> Yo <em>pienso</em> que Ivy fue la primera.</p>
+<p> Yo pienso <em>que Ivy</em>  fue la primera.</p>
+<p> Yo pienso que Ivy fue la <em>primera</em> .</p>
+#+END_SRC
+
+** Ejemplo Énfasis
+#+BEGIN_EXPORT html
+<p> Yo <b><em>pienso</em></b> que Ivy fue la primera.</p>
+<p> Yo pienso <b><em>que Ivy</em></b>  fue la primera.</p>
+<p> Yo pienso que Ivy fue la <b><em>primera</em></b> .</p>
+#+END_EXPORT
+
+** Small
+El elemento =<small>= hace que el tamaño de fuente del texto sea un tamaño más pequeño. Por ejemplo, de grande a mediano, o de pequeño a x-pequeño. Hasta el tamaño de fuente mínimo del navegador.
+
+Este elemento se reutiliza para representar comentarios secundarios y letra pequeña, incluidos los derechos de autor y el texto legal, independientemente de su presentación con estilo.
+
+** Ejemplo Small
+#+BEGIN_SRC html
+<h1>QODE</h1>
+<p><small>Al usar este sitio, estás de acuerdo con nuestros "Términos de uso"
+y nuestra "Política de privacidad".</small></p>
+#+END_SRC
+#+BEGIN_EXPORT html
+<h1>QODE</h1>
+<small>Al usar este sitio, estás de acuerdo con nuestros "Términos de uso" y nuestra "Política de privacidad".</small>
+#+END_EXPORT
+
+** Links
+Links son creados usando el tag =<a>=. Los usuarios pueden hacer click en cualquier punto entre el tag de apertura =<a>= y el tag de clausura =</a>=.  Tu específicas a que pagina quieres vincular el enlace usando el atributo =href=.
+#+BEGIN_SRC html
+<a href="images/QODE.png">Logo de Qode</a>
+<br>
+<a href="https://www.facebook.com/QODE.info/">Facebook de QODE</a>
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<a href="images/QODE.png">Logo de Qode</a>
+<br>
+<a href="https://www.facebook.com/QODE.info/">Facebook de QODE</a>
+#+END_EXPORT
+
+** Imagenes
+Para agregar una imagen a la página, necesita usar un elemento =<img>=. Este es un elemento vacío (lo que significa que no hay una etiqueta de cierre).
+
+Debe llevar los siguientes dos atributos:
+- =src=: Ubicación de la imagen.
+- =alt=: Esto proporciona una descripción de texto que describe la imagen en caso no se pueda ver.
+- =title=: También puedes usar el atributo =title= con el elemento =<img>= para proporcionar información adicional sobre la imagen. La mayoría de los navegadores mostrarán el contenido de este atributo en la información sobre herramientas (tooltip) cuando el usuario pase el mouse sobre la imagen.
+
+** Ejemplo Imagenes
+#+BEGIN_SRC html
+<img src="images/QODE.png" alt="Logo de QODE" title="Code is for Everyone">
+#+END_SRC
+
+#+BEGIN_EXPORT html
+<img src="images/QODE.png" alt="Logo de QODE" title="Code is for Everyone">
+#+END_EXPORT
+
+* CSS
+  :PROPERTIES:
+  :SLIDE:    segue dark quote
+  :ASIDE:    right bottom
+  :ARTICLE:  flexbox vleft auto-fadein
+  :END:
+
+** Selectores
+:PROPERTIES:
+:ARTICLE:  smaller
+:END:
+Los selectores sirven seleccionar o especificar etiquetas html para luego darles ciertas propiedades. Los más importantes son los siguientes:
+| Selector              | Significado                                                                     | Ejemplo           |
+|-----------------------+---------------------------------------------------------------------------------+-------------------|
+| Selector de Tipo      | Busqu por nombre de tag                                                         | h1, h2, h3 {}     |
+| Selector =class=      | Busqueda de elementos cuyo atributo =class= coincida con el valor especificado. | .nota{} p.nota {} |
+| Selector =id=         | Busqueda de *un* elemento cuyo atributo =id= coincida con el valor especficado. | #introduccion {}  |
+| Selector Hijo         | Busqueda de elementos que sean hijos directos de otro.                          | li > a {}         |
+| Selector Descendiente | Busqueda de elementos que sean descendientes de otro.                           | p a {}            |
+
+** Como espeficicar color a un texto
+La propiedad =color= permite espeficicar el color del texto que contenido de un elemento html.
+
+Existen 3 formas de representar color:
+- Nombre: Existen 147 colores prefenidos que son reconocidos por su nombre. Ejemplo =DarkCyan=.
+- RGB: Colores expresados en terminos de cuando de =Rojo=, =Verde= y =Azul= son usados para formarlo. Ejemplo =rgb(100,100,99)= 
+- HEX: Colores expresados con un =#= compañados por 6 digitos que tambien representa la cantidad rojo, verde y amarillo para formarlo. Ejemplo =#ee3e80=  
+
+** Ejemplo color
+#+BEGIN_SRC html
+<h1 id="qode">QODE</h1>
+<p class="frase"><strong>if for Everyone</strong><p>
+#+END_SRC
+
+#+BEGIN_SRC css
+slides>slide h1#qode {
+    color: red;
+}
+slides>slide p.frase {
+    color: #0E53A7;
+}
+#+END_SRC
+
+** 
+#+BEGIN_EXPORT html
+<h1 id="qode">QODE</h1>
+<p class="frase"><strong>if for Everyone</strong><p>
+#+END_EXPORT
+
+** Como espeficicar un color de fondo
+CSS trata a cada elemento HTML como si apareciese en una caja, la propiedad =background-color= define un color de fondo para esa caja.
+
+La manera como se representa un color sigue siendo la misma que para la propiedad =color= (nombre, rgb y hex)
+
+** Ejemplo color de fondo
+#+BEGIN_SRC html
+<h1 id="qode2">QODE</h1>
+<p class="frase2"><strong>if for Everyone</strong><p>
+#+END_SRC
+#+BEGIN_SRC css
+slides>slide h1#qode2 {
+    color: red;
+    background-color: DarkCyan;
+}
+slides>slide p.frase2 {
+    color: #0E53A7;
+    background-color: rgb(200,200,200);
+}
+#+END_SRC
+** 
+#+BEGIN_EXPORT html
+<h1 id="qode2">QODE</h1>
+<p class="frase2"><strong>if for Everyone</strong><p>
+#+END_EXPORT
 * Gracias ˊ・ω・ˋ
   :PROPERTIES:
   :SLIDE: thank-you-slide segue
   :ASIDE: right
   :ARTICLE: flexbox vleft auto-fadein
   :END:
-

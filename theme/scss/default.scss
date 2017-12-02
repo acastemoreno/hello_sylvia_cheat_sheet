@@ -60,6 +60,10 @@ body {
 }
 
 slides > slide {
+    small {
+        font-size: smaller;
+    }
+
     display: none;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 26px;
@@ -79,6 +83,8 @@ slides > slide {
     //$translateX: 1020px;
     //$rotateY: 30deg;
     //$rotateX: 45deg;
+
+    
 
     &.far-past {
 	//display: block;
@@ -1128,4 +1134,20 @@ aside.gdbar {
     pre, code {
 	font-family: monospace !important;
     }
+}
+
+slides>slide h1#qode {
+    color: red;
+}
+slides>slide p.frase {
+    color: #0E53A7;
+}
+
+slides>slide h1#qode2 {
+    color: red;
+    background-color: DarkCyan;
+}
+slides>slide p.frase2 {
+    color: #0E53A7;
+    background-color: rgb(200,200,200);
 }
