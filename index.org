@@ -194,7 +194,7 @@ Existen 3 formas de representar color:
 ** 
 #+BEGIN_SRC html
 <h1 id="qode">QODE</h1>
-<p class="frase"><strong>if for Everyone</strong><p>
+<p class="frase"><strong>is for Everyone</strong><p>
 #+END_SRC
 
 #+BEGIN_SRC css
@@ -208,7 +208,7 @@ slides>slide p.frase {
  
 #+BEGIN_EXPORT html
 <h1 id="qode">QODE</h1>
-<p class="frase"><strong>if for Everyone</strong><p>
+<p class="frase"><strong>is for Everyone</strong><p>
 #+END_EXPORT
 
 ** Como espeficicar un color de fondo
@@ -219,7 +219,7 @@ La manera como se representa un color sigue siendo la misma que para la propieda
 ** 
 #+BEGIN_SRC html
 <h1 id="qode2">QODE</h1>
-<p class="frase2"><strong>if for Everyone</strong><p>
+<p class="frase2"><strong>is for Everyone</strong><p>
 #+END_SRC
 #+BEGIN_SRC css
 slides>slide h1#qode2 {
@@ -233,7 +233,7 @@ slides>slide p.frase2 {
 #+END_SRC 
 #+BEGIN_EXPORT html
 <h1 id="qode2">QODE</h1>
-<p class="frase2"><strong>if for Everyone</strong><p>
+<p class="frase2"><strong>is for Everyone</strong><p>
 #+END_EXPORT
 * Gracias ˊ・ω・ˋ
   :PROPERTIES:
